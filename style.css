@@ -1,0 +1,60 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Tahoma, Verdana, sans-serif;
+}
+#container {
+    font-size: 1.1em;
+    max-width: 540px;
+}
+
+#frm-dog {
+    background-color: #D7CEB2;
+    margin: 12px;
+    padding: 5px 20px;
+    max-width: 540px;
+    border-radius: 12px;
+    text-align: center;
+}
+
+#img-dog {
+    margin-top: 15px;
+    text-align: center;
+}
+
+#img-dog img {
+    width: 80%;
+    border-radius: 12px;
+}
+
+#btn-dog {
+    background-color: #66635B;
+    border: none;
+    border-radius: 12px;
+    color: white;
+    padding: 8px;
+    font-size: 0.8em;
+    margin: 10px 10px;
+    display: inline-block;
+}
+
+form {
+    display: inline-block;
+}
+
+#btn-dog:hover {
+    background-color: #4C5760;
+    border-color: #4C5760;
+}
+
+select {
+    font-size: 0.9em;
+    padding: 8px 8px;
+    border-radius: 12px;
+}
+
+p {
+    color: red;
+}
