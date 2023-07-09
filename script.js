@@ -33,3 +33,34 @@ async function getDogImage() {
     imgDog.innerHTML = '<p>Az API nem érhető el!<br>' + error + '</p>'
   }
 }
+
+//2. megoldás:
+// function getBreeds() {
+//   fetch(breedsURL)
+//     .then((response) => response.json())
+//     .then((data) => {
+//       Object.keys(data.message).forEach(function (key) {
+//         let option = document.createElement('option')
+//         option.value = key
+//         option.innerHTML = key
+//         breedSelect.appendChild(option)
+//       })
+//     })
+//     .catch(
+//       (error) =>
+//         (imgDog.innerHTML = '<p>Az API nem elérhető<br>' + error + '</p>')
+//     )
+// }
+
+// function getDogImage() {
+//   fetch(`https://dog.ceo/api/breed/${breedSelect.value}/images/random`)
+//     .then((response) => response.json())
+//     .then((data) => {
+//       imgDog.innerHTML = `<img src="${data.message}">`
+//       console.log(breedSelect.value)
+//     })
+//     .catch(
+//       (error) =>
+//         (imgDog.innerHTML = '<p>Az API nem elérhető<br>' + error + '</p>')
+//     )
+// }
